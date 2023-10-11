@@ -2,8 +2,8 @@
   font-family: Arial, Helvetica, sans-serif
 }
 
-.body {
-  background: linear-gradient(-45deg, #35e177, #a4f397, #94e894, #0a9221);
+/*.body {
+  background: linear-gradient(-45deg, #0c9aff, #1c7aff, #3488ff, #04b8ff);
   background-size: cover 400% 400%;
   animation: gradient 5s ease infinite;
   text-align: center;
@@ -22,19 +22,44 @@
   100% {
     background-position: 0% 50%;
   }
+}*/
+
+.grid {
+  position: relative;
+  height: 100vmin;
 }
 
-/*.grid {
-  background-image: url('../../../assets/backg-img.jpg') !important;
+.background {
+  background-image: url('../../../assets/backg-img.jpg');
   background-size: cover;
-  background-position: center !important;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 100vmin;
-}*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade para mudar a escuridão */
+}
 
 @media screen and (min-width: 1400px) {
   .grid {
     background-position: top;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    height: 200vmax;
   }
 }
 
@@ -47,7 +72,7 @@
 
   width: 100%;
   height: 40px;
-  background: #2865ff;
+  background: #2965ff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -64,7 +89,7 @@
 
 }
 .p-button:hover {
-  background: #58ca1f;
+  background: #023191;
 }
 
 
@@ -73,6 +98,27 @@ button {
 	outline: none !important;
 	border: none;
 	background: transparent;
+}
+::ng-deep .p-card-body {
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+::ng-deep .p-card-body:hover {
+  box-shadow: 0 20px 16px 10px #0000005f;
+  transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .p-element::before {
@@ -89,5 +135,27 @@ button {
       top: -1%;
       left: -2%;
       animation: spin 2.5s linear infinite;
+  }
+
+
+  .p-inputtext:hover {
+    border: #0464ffcb 1px solid
+
+  }
+
+  .p-inputtext::selection {
+
+    border-color: #0884e3;
+    outline-style: none;
+  }
+
+  .p-inputtext:focus {
+    border: #0e96ff 1px solid;
+    border-color: #0c96ff;
+  }
+
+  form {
+    position: relative;
+    z-index: 1;
   }
 
