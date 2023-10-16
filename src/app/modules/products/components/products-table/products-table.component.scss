@@ -1,0 +1,52 @@
+::ng-deep .p-card-body {
+  background-color: #2c2c2c;
+  border-radius: 3px !important;
+}
+
+::ng-deep .shadow-4 {
+  box-shadow:
+  0px 1px 10px rgba(0, 34, 255, 0.12),
+  0px 4px 5px rgba(14, 90, 255, 0.14),
+  0px 2px 4px -1px rgba(1, 37, 126, 0.2) !important;
+}
+
+::ng-deep .p-paginator  {
+  background-color: #2c2c2c;
+}
+
+
+
+::ng-deep ::-webkit-scrollbar {
+
+  width: 8px; /* Espessura da barra de rolagem */
+  height: 9px;
+  transition: width 0.3s; /* Transição suave ao passar o mouse */
+}
+
+::ng-deep ::-webkit-scrollbar:hover {
+  width: 8px; /* Espessura da barra de rolagem ao passar o mouse */
+}
+
+::ng-deep ::-webkit-scrollbar-track {
+  background-color: #212121; /* Cor de fundo da track */
+  border-radius: 1px; /* Cantos arredondados para a track */
+}
+
+::ng-deep ::-webkit-scrollbar-thumb {
+  background-color: #2867ef; /* Cor da thumb (a barra de rolagem propriamente dita) */
+  border-radius: 1px; /* Cantos arredondados para a thumb */
+  transition: background-color 0.3s; /* Transição suave para a cor ao passar o mouse */
+}
+
+::ng-deep ::-webkit-scrollbar-thumb:hover {
+  background-color: #1346b4; /* Cor quando o mouse está sobre a thumb */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sombra sutil ao passar o mouse */
+}
+
+::ng-deep .p-ripple   {
+  //color: #3875f9 !important;
+}
+
+
+
+

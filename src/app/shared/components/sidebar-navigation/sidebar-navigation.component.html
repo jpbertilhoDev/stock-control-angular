@@ -1,0 +1,62 @@
+<p-sidebar [(visible)]="sidebarVisible">
+  <hr />
+  <ng-template pTemplate="header">
+    <h1>SideBar</h1>
+  </ng-template>
+
+  <div class="sidebar-content">
+    <p-button
+      icon="pi pi-home"
+      label="Dashboard"
+      routerLink="/dashboard"
+      styleClass="p-button p-button-text"
+      routerLinkActive="exact_route"
+    ></p-button>
+
+    <br />
+
+    <p-button
+      icon="pi pi-cart-plus"
+      label="Produtos"
+      routerLink="/products"
+      styleClass="p-button p-button-text"
+      routerLinkActive="exact_route"
+    ></p-button>
+
+    <br />
+
+    <p-button
+      icon="pi pi-th-large"
+      label="Categorias"
+      routerLink="/categories"
+      styleClass="p-button p-button-text"
+      roubterLinkActive="exact_route"
+    ></p-button>
+
+    <p-button
+      icon="pi pi-credit-card"
+      label="Efetuar Venda"
+      styleClass="p-button p-button-text"
+      routerLink="/products"
+      routerLinkActive="exact_route"
+    ></p-button>
+  </div>
+
+  <ng-template pTemplate="footer">
+    <hr>
+    <div class="sidebar-logout">
+      <p-button
+      icon="pi pi-sign-out"
+        label="Sair"
+        styleClass="p-button-danger"
+        (onClick)="handleLogout()"
+      ></p-button>
+    </div>
+  </ng-template>
+</p-sidebar>
+
+<p-button
+  (click)="sidebarVisible = true"
+  icon="pi pi-bars"
+  styleClass="p-button-rounded p-button-text"
+></p-button>

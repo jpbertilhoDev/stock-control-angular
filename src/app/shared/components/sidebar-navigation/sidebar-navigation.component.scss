@@ -1,0 +1,157 @@
+body{
+  background-color: #212121;
+}
+
+
+
+::ng-deep .p-sidebar h1 {
+  margin-bottom: 0; /* Remove a margem abaixo do título */
+}
+
+::ng-deep hr.ng-tns-c3811825900-1 {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0 0 8px 0; /* Remova a margem superior e deixe 8px de margem inferior */
+}
+
+::ng-deep hr.ng-star-inserted {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 0 8px 0; /* Remova a margem superior e deixe 8px de margem inferior */
+}
+
+
+
+::ng-deep .p-sidebar {
+  font-family: Inter var;
+  color: rgb(255, 255, 255);
+  background-color: #212121;
+
+}
+
+::ng-deep .p-sidebar-header {
+  color: #326FD1;
+}
+
+
+
+
+
+::ng-deep .p-button-icon-only {
+  //background-color:#212121; ;
+  justify-content: center;
+}
+
+
+::ng-deep .p-button-icon{
+
+  color: #ffffff
+}
+
+
+.p-sidebar h1 {
+  margin-bottom: -1rem;
+}
+
+
+::ng-deep .p-button{
+  //background-color: transparent;
+  align-items: center;
+  font-style: normal !important;
+  color: white;
+  font-family: Inter var
+}
+
+
+/* global styles */
+
+::ng-deep .p-button > span {
+  font-weight: normal;
+
+}
+.p-sidebar {
+  background-color: #212121;
+  color: #ffffff;
+}
+
+.p-sidebar-group-start {
+  margin-top: 1rem;
+}
+
+ .p-button {
+
+  //min-width: 100%;
+
+  align-items: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;  // Suave transição ao passar o mouse
+  color: #ffffff;
+  background-color: transparent;
+}
+
+::ng-deep .p-sidebar .p-button {
+  min-width: 100%;
+
+  align-items: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;  // Suave transição ao passar o mouse
+  color: #ffffff;
+
+}
+
+::ng-deep .p-button-icon {
+
+  display: flex;
+     /* Ajuste esse valor conforme a distância desejada */
+}
+
+
+
+
+::ng-deep .p-button:hover {
+  background-color: #007BFF;
+}
+
+.p-button-rounded {
+  border-radius: 50%;
+}
+
+.p-button-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+::ng-deep .p-button-danger {
+  text-align: center;
+  //border: #007BFF;
+  //background-color: #007BFF;
+  //width: 100%;
+  //margin-top: 2rem; // Espaço entre o botão "Sair" e os outros botões
+}
+
+::ng-deep .p-button-label{
+  //margin-right: 100px;
+  text-align: left;
+}
+
+::ng-deep .sidebar-logout  {
+  display: flex;
+  //justify-content: center; // Centraliza horizontalmente
+  //align-items: center;
+  width: 100%;    // Centraliza verticalmente
+
+}
+
+::ng-deep .p-element{
+  //text-align: center;
+}
+::ng-deep .p-button-danger:hover {
+
+  background-color: red;
+  border: none !important;
+}
+
+
+
+
+

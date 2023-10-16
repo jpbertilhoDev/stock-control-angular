@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 
+import { SharedModule } from 'src/app/shared/shared.module';
 import { DashboardHomeComponent } from './page/dashboard-home/dashboard-home.component';
 import { DASHBOARD_ROUTES } from './dashboard.routing';
 
@@ -15,6 +16,7 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { CardModule } from 'primeng/card';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,9 @@ import { MessageService } from 'primeng/api';
     ToolbarModule,
     CardModule,
     ToastModule,
+    ChartModule,
+    //SHARED
+    SharedModule
   ],
   providers: [ MessageService, CookieService]
 })

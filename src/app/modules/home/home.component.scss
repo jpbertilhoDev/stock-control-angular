@@ -1,39 +1,35 @@
 *{
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Inter var;
 }
 
-/*.body {
-  background: linear-gradient(-45deg, #0c9aff, #1c7aff, #3488ff, #04b8ff);
-  background-size: cover 400% 400%;
-  animation: gradient 5s ease infinite;
-  text-align: center;
-  height: 100vh;
+h1{
+  color: white;
+
 }
 
-
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}*/
 
 .grid {
-  position: relative;
-  height: 100vmin;
+  display: flex; /* Define o grid como flexível */
+  width: 100%; /* Define a largura do grid como 100% da largura do contêiner */
 }
 
 .background {
-  background-image: url('../../../assets/backg-img.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  //background-image: url("../../../assets/backg-img.jpg"); /* Define a imagem de fundo */
+  background-size: cover; /* Define o tamanho da imagem de fundo como cobrir todo o espaço */
+  background-position: center; /* Define a posição da imagem de fundo como centralizada */
+  grid-column: 2 / 3; /* Define a coluna do fundo como a segunda coluna do grid */
+  grid-row: 1 / 2; /* Define a linha do fundo como a primeira linha do grid */
+}
+
+
+.input {
+  width: 80%; /* Define a largura do input como 80% da largura do formulário */
+  margin: 10px; /* Define a margem do input como 10px */
+}
+
+.background {
+  background-color: #212121;;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -64,10 +60,10 @@
 }
 
 .p-button, p-component{
-  font-family: Montserrat-Bold;
+
   font-size: 15px;
   line-height: 1.5;
-  color: #fff;
+  //color: #fff;
 
 
   width: 100%;
@@ -94,16 +90,21 @@
 
 
 
+
+
 button {
 	outline: none !important;
 	border: none;
 	background: transparent;
 }
 ::ng-deep .p-card-body {
-  border-radius: 10px;
+
+
+  background-color: #2b2b2b;
+  border-radius: 5px;
   align-items: center;
   justify-content: center;
-  font-family: Arial, sans-serif;
+  font-family: Inter var;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
@@ -155,7 +156,12 @@ button {
   }
 
   form {
+    display: flex; /* Define o formulário como flexível */
+    flex-direction: column; /* Define a direção do formulário como coluna */
+    justify-content: center; /* Define o alinhamento vertical do formulário como centralizado */
+    align-items: center; /* Define o alinhamento horizontal do formulário como centralizado */
+    grid-column: 1 / 2; /* Define a coluna do formulário como a primeira coluna do grid */
+    grid-row: 1 / 2; /* Define a linha do formulário como a primeira linha do grid */
     position: relative;
     z-index: 1;
   }
-

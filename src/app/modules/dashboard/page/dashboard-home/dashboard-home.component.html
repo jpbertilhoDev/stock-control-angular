@@ -1,1 +1,17 @@
-<h1>Rota Dashboard, funcionando com sucesso!</h1>
+<app-sidebar-navigation></app-sidebar-navigation>
+
+<div class="grid">
+  <div class="col-12">
+    <!-- GRÁFICO DE PRODUTOS EM ESTOQUE -->
+    <p-card
+    header="Quantidade de produtos em estoque"
+    styleClass="shadow-4 m-5 text-primary-500"
+    >
+    <p-chart
+    type="bar"
+    [data]="productsChartDatas"
+    [options]="productsChartOptions"
+    ></p-chart>
+  </p-card>
+  </div>
+</div>
