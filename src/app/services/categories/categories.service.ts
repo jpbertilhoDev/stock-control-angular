@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';
 import { GetCategoriesResponse } from 'src/app/models/interfaces/categories/responses/GetCategoriesResponse';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CategoriesService {
-  private API_URL = environment.API_URL
+  private API_URL = environment.API_URL;
   private JWT_TOKEN = this.cookie.get('USER_INFO');
   private httpOptions = {
     headers: new HttpHeaders({
@@ -18,12 +18,12 @@ export class CategoriesService {
     }),
   };
 
-  constructor(private http: HttpClient, private cookie: CookieService) { }
+  constructor(private http: HttpClient, private cookie: CookieService) {}
 
-  getAllCategories() : Observable<Array<GetCategoriesResponse>> {
-    return this.http.get<Array<GetCategoriesResponse>> (
+  getAllCategories(): Observable<Array<GetCategoriesResponse>> {
+    return this.http.get<Array<GetCategoriesResponse>>(
       `${this.API_URL}/categories`,
       this.httpOptions
-    )
+    );
   }
 }
